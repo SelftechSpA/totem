@@ -1,0 +1,205 @@
+@base-color: #FC6351;
+
+body{
+    /*background-image: url(../images/background.png);*/
+    font-size: 13px;
+}
+
+#page {
+    padding: 60px 30px 30px 30px;
+    /*background: white;*/
+}
+
+.navbar {
+    /*box-shadow: 0px 5px rgba(0,0,0,0.06);*/
+}
+
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1000px;
+}
+
+.navbar-inner{
+    background: @base-color !important;
+    border: none;
+}
+
+.navbar-inner .container{
+    position: relative;
+}
+
+.navbar .nav > li {
+    font-size: 12px;
+    height: 38px;
+}
+
+.navbar .nav > li > a {
+    text-shadow: none;
+    line-height: 25px;
+    color: #fff;
+    padding: 10px 16px 10px;
+}
+
+.navbar .nav > li.active {
+    color: #fff;
+}
+
+.navbar .nav > li.active a {
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.navbar .brand {
+    margin-left: 0px;
+    margin-right: 20px;
+    background-image: url(../images/logo.png);
+    width: 147px;
+    height: 45px;
+    padding: 0px;
+    color: transparent;
+    text-shadow: none;
+}
+
+.navbar .brand:hover {
+    color: transparent;
+    text-shadow: none;
+}
+
+.btn{
+    border-radius: 2px;
+    box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+@btn-red: @base-color;
+@btn-red2: darken(@base-color, 10%);
+.btn-primary {
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="@btn-red", endColorstr="@btn-red2");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(@btn-red), to(@btn-red2));
+    background-image: -moz-linear-gradient(top, @btn-red, @btn-red2);
+    background-image: -ms-linear-gradient(top, @btn-red, @btn-red2);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @btn-red), color-stop(100%, @btn-red2));
+    background-image: -webkit-linear-gradient(top, @btn-red, @btn-red2);
+    background-image: -o-linear-gradient(top, @btn-red, @btn-red2);
+    background-image: linear-gradient(@btn-red, @btn-red2);
+    border-color: @btn-red2 @btn-red2;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+    color: #ffffff;
+    background-color: @btn-red2;
+    *background-color: @btn-red2;
+}
+
+/*
+.table.items thead tr th{
+    background-color: hsl(81, 64%, 40%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#97d12d", endColorstr="#79a724");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#97d12d), to(#79a724));
+    background-image: -moz-linear-gradient(top, #97d12d, #79a724);
+    background-image: -ms-linear-gradient(top, #97d12d, #79a724);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #97d12d), color-stop(100%, #79a724));
+    background-image: -webkit-linear-gradient(top, #97d12d, #79a724);
+    background-image: -o-linear-gradient(top, #97d12d, #79a724);
+    background-image: linear-gradient(#97d12d, #79a724);
+    border-color: #79a724 #79a724 hsl(81, 64%, 37.5%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+    -webkit-font-smoothing: antialiased;
+  
+    border-left: 1px solid hsl(81, 64%, 60%);
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+a.sort-link{
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+    -webkit-font-smoothing: antialiased;
+}
+
+.table.items thead tr th:first-child{
+    border-radius: 4px 0px 0px 4px;
+    border-left: none;
+}
+
+.table.items thead tr th:last-child{
+    border-radius: 0px 4px 4px 0px;
+    border-right: none;
+}*/
+
+.row {
+    margin-left: 0px;
+}
+
+#page > .row {
+    margin-left: -20px;
+}
+
+/*.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+    background-color: darken(#f9f9f9, 5%);
+}
+
+.table-striped tbody tr:nth-child(even) td, .table-striped tbody tr:nth-child(even) th {
+    background-color: darken(#f9f9f9, 10%);
+}*/
+
+h1{
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.grid-view table.items tr.selected td {
+    background: lighten(@base-color, 40%);
+}
+
+input, select, textarea {
+    color: #666;
+}
+
+.btn, .btn:hover {
+    color: #000;
+    text-shadow: none;
+}
+
+.btn-danger, .btn-danger:hover {
+    color: #fff;
+    text-shadow: none;
+}
+
+.row.insertion{
+    /*margin-bottom: 12px;*/
+}
+
+.portlet{
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 45px;
+    bottom: 0px;
+    right: 0px;
+    padding: 26px;
+    
+    .portlet-title{
+        font-weight: bold;
+    }
+}
+
+#category-grid .thumb{
+    background-color: gray;
+}

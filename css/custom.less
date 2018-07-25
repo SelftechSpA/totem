@@ -1,0 +1,166 @@
+@base-color: #EE332A;
+
+body
+{
+	background: #D7D7D7;
+}
+
+#page
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: none;
+}
+
+#logo{
+    //padding-left: 110px;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    //margin-top: 10px;
+    //margin-left: 10px;
+    padding-top: 13px;
+    color: @base-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: @base-color;
+}
+
+#content h1{
+    font-size: 1.6em;
+}
+
+.container .decoration-bar{
+    position: absolute; height: 6px; left: 0px; right: 0px; z-index: 20;
+    overflow: hidden;
+    background-color: #19A800;
+}
+
+.container .decoration-bar .c1, .container .decoration-bar .c2, .container .decoration-bar .c3 {
+    height: 100%; width: 25%; float: left;
+} 
+
+.container .decoration-bar .c1{
+    background-color: @base-color;
+}
+
+.container .decoration-bar .c2{
+    background-color: #ED207B;
+}
+
+.container .decoration-bar .c3{
+    background-color: #FFC75B;
+}
+
+#header
+{
+	border-top: 6px solid white;
+}
+
+#footer {
+    margin: 0px;
+    border-top: 1px solid @base-color;
+}
+
+#mainMbMenu
+{
+	background: none;
+    background-color: @base-color;
+}
+
+#mainMbMenu ul {
+    /*padding: 6px 20px 5px 15px;
+    margin-top: 2px;*/
+    /*background-color: @base-color;    
+    border: 2px solid @base-color;
+    border-bottom: none;*/
+}
+
+#mainMbMenu #nav {
+    /*padding-top: 2px;*/
+}
+
+#mainMbMenu ul li>a:hover, #mainMbMenu ul li.active>a
+{
+	color: @base-color;
+	background-color:white;
+}
+
+#nav li {
+    float: left;
+    border: 2px solid @base-color;
+    border-bottom: none;
+}
+
+div.search-form{
+	background: #f4f4f4;
+    display: none; /* Ocultar por defecto */
+}
+
+.portlet-decoration
+{
+	background: @base-color;
+	border-left: none;
+}
+
+.portlet-title
+{
+	color: white;
+}
+
+.portlet-content
+{
+	background: #f4f4f4;
+}
+
+.operations li a:hover
+{
+	background: #F9F9DD;
+}
+
+/* Custom CGridView */ 
+
+.grid-view table.items th {
+    background-image: none;
+    background-color: @base-color;
+}
+
+.grid-view table.items tbody tr.odd{
+    background-color: #F4F4F4;
+}
+
+.grid-view table.items tbody tr.even{
+    background-color: white;
+}
+
+.grid-view table.items tbody tr:hover{
+    background-color: #F9F9DD;
+}
+
+.grid-view table.items tbody tr:active{
+    background-color: #F4F4BB;
+}
+
+.grid-view table.items tbody tr.selected{
+    background-color: #F4F4BB;
+}
+
+/* disable selection for extrarows */     
+.grid-view td.extrarow {
+   background: none repeat scroll 0 0 #F8F8F8; 
+   font-weight: bold;
+}
+
+/* Labels */
+div.wide.form label {
+    width: 140px;
+    line-height: 24px;
+}
+
+.list-view .view{ width: 315px !important; margin-left: 16px !important; margin-bottom: 16px !important; margin-top: 0px !important; margin-right: 0px !important; 
+    float: left !important;
+}
+
+.list-view .view .thumb { float: left; margin-right: 8px; }
+.list-view .view.menu { height: 60px; overflow: hidden; }
