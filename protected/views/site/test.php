@@ -42,71 +42,11 @@ $this->pageTitle=Yii::app()->name;
         <h1 style="text-transform: uppercase;">Escala de somnolencia</h1></div>', array("TestEpworth/create")); ?>
     </div>
 </div>
-
-<div class="row span12 center">
-        <?php echo CHtml::link("Generar planilla últimos resultados", array("site/results"), array("class"=>"btn btn-green btn-large")); ?>
-</div>
-
-<div class="row span12 center">
-    <div class="span12 nomargin">
-        <h1>Últimos resultados</h1>    
-        
-        <?php $this->widget('bootstrap.widgets.TbGridView',array(
-            'id'=>'TestResults-grid',
-            'dataProvider'=>$results->search(),
-            'type'=>'bordered striped',
-            //'filter'=>$results,
-            'summaryText'=>'',
-            'columns'=>array(
-                array('name'=>'date_taken',
-                      'htmlOptions'=>array('width'=>160),
-                      ),
-                array(
-                    'name'=>'test',
-                    'value'=>'GxHtml::valueEx($data->test)',
-                    'filter'=>GxHtml::listDataEx(Test::model()->findAllAttributes(null, true)),
-                    'htmlOptions'=>array('width'=>200),
-                ),
-                array(
-                    'name'=>'score',
-                    'header'=>Yii::t('app', 'Score'),
-                    'value'=>'round($data->score, 1)',
-                ),       
-                array(
-                    'class'=>'bootstrap.widgets.TbButtonColumn',
-                    'template'=>'{view}',
-                    'buttons'=>array(
-                        'view' => array(
-                            'label'=>Yii::t('app', 'View test results'),     // text label of the button
-                            'url'=>'$data->getViewURL()',       // the PHP expression for generating the URL of the button
-                            'icon'=>'eye-open',
-                        ),                
-                    ),            
-                    'htmlOptions'=>array('width'=>80),
-                ),
-            ),
-        )); ?>
-    </div>
-    <script>
-        function hoverCallback(index, options, content){
-            var row = options.data[index];
-            for (var i=0; i<options.ykeys.length; i++){
-                if (row[options.ykeys[i]]){
-                    return row.x + '<br><strong>' + options.labels[i] + '</strong><br>Puntaje: ' + row[options.ykeys[i]];
-                }
-            }
-        }
-        $(function(){
-            setTimeout(function(){
-                $('#chartTabs a, #chartTabs li').removeClass('active');
-                $('#chartTabs a:first').tab('show');
-            }, 1000);
-        });
-    </script>
-    <div class="span7" style="">
-        <h1>Mi progreso</h1>
+<div class="row botonera-tests span12 center">
+    
+        <h2>MI PROGRESO</h2>
         <?php $this->widget('bootstrap.widgets.TbTabs', array(
-            'type'=>'pills', // 'tabs' or 'pills'
+            'type'=>'tabs', // 'tabs' or 'pills'
             'tabs'=>array(
                 array('label'=>'Calidad de sueño', 
                       'content'=>renderResults($this, 1, 0, 0, 21), 
@@ -159,7 +99,73 @@ $this->pageTitle=Yii::app()->name;
                 }
             } 
         ?>
+    
+</div>
+
+<div class="row span12 center">
+    <div class="span12 nomargin">
+        <h2>ULTIMOS RESULTADOS</h2>    
+        
+        <?php $this->widget('bootstrap.widgets.TbGridView',array(
+            'id'=>'TestResults-grid',
+            'dataProvider'=>$results->search(),
+            'type'=>'bordered striped',
+            //'filter'=>$results,
+            'summaryText'=>'',
+            'columns'=>array(
+                array('name'=>'date_taken',
+                      'htmlOptions'=>array('width'=>160),
+                      ),
+                array(
+                    'name'=>'test',
+                    'value'=>'GxHtml::valueEx($data->test)',
+                    'filter'=>GxHtml::listDataEx(Test::model()->findAllAttributes(null, true)),
+                    'htmlOptions'=>array('width'=>200),
+                ),
+                array(
+                    'name'=>'score',
+                    'header'=>Yii::t('app', 'Score'),
+                    'value'=>'round($data->score, 1)',
+                ),       
+                array(
+                    'class'=>'bootstrap.widgets.TbButtonColumn',
+                    'template'=>'{view}',
+                    'buttons'=>array(
+                        'view' => array(
+                            'label'=>Yii::t('app', 'View test results'),     // text label of the button
+                            'url'=>'$data->getViewURL()',       // the PHP expression for generating the URL of the button
+                            'icon'=>'eye-open',
+                        ),                
+                    ),            
+                    'htmlOptions'=>array('width'=>80),
+                ),
+            ),
+        )); ?>
     </div>
+
+    <div class="row span12 center">
+            <?php echo CHtml::link("Generar planilla últimos resultados", array("site/results"), array("class"=>"btn btn-green btn-large")); ?>
+    </div>
+
+
+
+    <script>
+        function hoverCallback(index, options, content){
+            var row = options.data[index];
+            for (var i=0; i<options.ykeys.length; i++){
+                if (row[options.ykeys[i]]){
+                    return row.x + '<br><strong>' + options.labels[i] + '</strong><br>Puntaje: ' + row[options.ykeys[i]];
+                }
+            }
+        }
+        $(function(){
+            setTimeout(function(){
+                $('#chartTabs a, #chartTabs li').removeClass('active');
+                $('#chartTabs a:first').tab('show');
+            }, 1000);
+        });
+    </script>
+    
 </div>
 <style>
     .resultsChart{

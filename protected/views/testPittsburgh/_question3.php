@@ -1,13 +1,13 @@
             <div class="row nomargin">
-                <label class="span4"><?php $labels = $model->attributeLabels();
-                                           echo $labels[$question]; ?></label>
+                <label class="span7"><h4><?php $labels = $model->attributeLabels();
+                                           echo $labels[$question]; ?></h4></label>
                 <?php $this->widget('bootstrap.widgets.TbButtonGroup', array(
                     'type' => 'normal',
                     'size' => 'small',
                     'buttonType' => 'button',
                     'toggle' => 'radio',
                     'htmlOptions' => array('data-toggle-name'=>'PittsburghTest['.$question.']', 
-                                           'class'=>'span6 pull-right'),
+                                           'class'=>'span12'),
                     'buttons'=>array(
                         array('label'=>'Ningún problema', 'htmlOptions' => array('value'=>'0')),
                         array('label'=>'Poco problema', 'htmlOptions' => array('value'=>'1')),

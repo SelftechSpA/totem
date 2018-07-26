@@ -10,7 +10,7 @@ $this->menu = array(
 ?>
 
 <script>
-    /*function tooltipFormatter(value){
+    function tooltipFormatter(value){
         var msj = new Array(
             '0. Ninguna vez en el último mes',
             '1. Menos de una vez a la semana',
@@ -18,7 +18,7 @@ $this->menu = array(
             '3. Tres o más veces a la semana'
             );
         return msj[value];
-    }*/
+    }
 </script>
 <script type="text/javascript" src="js/spinedit/bootstrap-spinedit.js"></script>
 <link rel="stylesheet" type="text/css" href="js/spinedit/bootstrap-spinedit.css" />
@@ -27,12 +27,12 @@ $this->menu = array(
 <div class="cuestionario form-centered">
     
     <div class="iconoTest span1 center"><img src="images/ico_test_pittsburgh.png" alt=""></div>
-    <h1>Cuestionario Pittsburgh de calidad de sueño</h1>
+    <h1>CUESTIONARIO PITTSBURGH DE CALIDAD DE SUEÑO</h1>
 
     <div class="content">
-        <div class="row span11 center">
+        <div class="row span10 center">
             <div class="intro">
-                <h2>La importancia de la calidad de tu sueño</h2>
+                <h2>LA IMPORTANCIA DE LA CALIDAD DEL SUEÑO</h2>
                 <p>
                    Un sueño escaso o de mala calidad puede tener repercusiones negativas en tu vida diaria. Si esta situación se prolonga en el tiempo, puede afectar tu salud y tu estado de ánimo e interferir en el trabajo
                    y en la vida social.
@@ -99,6 +99,12 @@ jQuery(function($) {
     var hidden  = $('input[name="' + name + '"]', form);
     $('button', group).each(function(){
       var button = $(this);
+      //button.removeClass('btn');
+      button.removeClass('btn-normal');
+      button.removeClass('btn-small');
+      
+      button.addClass('btn-green');
+      button.addClass('btn-large');
       button.on('click', function(){
           hidden.val($(this).val());
       });
@@ -108,7 +114,7 @@ jQuery(function($) {
     });
   });
 });
-
+//class="btn btn-normal btn-small"
 $(document).ready(function(){
     $('.spinEditHoras').spinedit({
         minimum: 0,
