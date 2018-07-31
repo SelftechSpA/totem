@@ -28,7 +28,7 @@ $this->menu = array(
     <h1>Índice de predicción de apnea</h1>
 
     <div class="content">
-        <div class="row span11 center">
+        <div class="row span10 center">
              <div class="intro">
                 <h2>Ronquidos y Apneas de Sueño</h2>
                 <p>
@@ -101,6 +101,11 @@ jQuery(function($) {
     var hidden  = $('input[name="' + name + '"]', form);
     $('button', group).each(function(){
       var button = $(this);
+      button.removeClass('btn-normal');
+      button.removeClass('btn-small');
+      
+      button.addClass('btn-green');
+      button.addClass('btn-large');
       button.on('click', function(){
           hidden.val($(this).val());
       });

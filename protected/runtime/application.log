@@ -8020,3 +8020,207 @@ Stack trace:
 REQUEST_URI=/totem/index.php?r=company/admin
 HTTP_REFERER=http://localhost/totem/index.php?r=company/admin
 ---
+2018/07/30 23:36:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:39:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:40:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:40:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=results
+---
+2018/07/30 23:40:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=results
+---
+2018/07/30 23:40:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=results
+---
+2018/07/30 23:43:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:43:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:44:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:47:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=site/test
+---
+2018/07/30 23:48:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=user/profile
+---
+2018/07/30 23:49:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'Usted no se enc...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('results')
+#9 /Applications/XAMPP/xamppfiles/htdocs/totem/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/XAMPP/xamppfiles/htdocs/totem/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/totem/index.php?r=results
+HTTP_REFERER=http://localhost/totem/index.php?r=user/profile
+---

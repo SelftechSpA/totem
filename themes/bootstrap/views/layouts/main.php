@@ -77,11 +77,12 @@
             }
         ?>
         <?php
+        
             $this->widget('bootstrap.widgets.TbMenu',array(
                 'items'=>array(
                     //array('label'=>Yii::t('app', 'Home'), 'url'=>array('/site/index'), 'linkOptions'=>array('class'=>'home')),
                     //array('label'=>Yii::t('app', 'About'), 'url'=>array('/site/about'), 'linkOptions'=>array('class'=>'about')),
-                    array('label'=>Yii::t('app', 'TEST'), 'url'=>array('/site/test'), 'linkOptions'=>array('class'=>'test'),'visible'=>$isAdmin),
+                    array('label'=>Yii::t('app', 'TEST'), 'url'=>array('/site/test'), 'linkOptions'=>array('class'=>'test'),'visible'=>!$isGuest),
                     array('label'=>Yii::t('app', 'RESULTADOS'), 'url'=>array('/results'), 'linkOptions'=>array('class'=>'test'), 'visible'=>$isAdmin),
                     //array('label'=>Yii::t('app', 'Empresas'), 'url'=>array('/company/admin'), 'linkOptions'=>array('class'=>'home'), 'visible'=>$isAdmin),
                     array('label'=>Yii::t('app', 'LOGIN'), 'url'=>array('/user/login'), 'linkOptions'=>array('class'=>'login'), 'visible'=>$isGuest),
