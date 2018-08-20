@@ -35,7 +35,27 @@ $this->menu=array(
             ):array()
             ),
         )); ?>
-        <?php if ($model->userTest->score >= 500) { ?>
+        <?php if ($model->userTest->score >= 500) { 
+            ECHO "TEST EXITOSO, ENVIA CORREO";
+            
+            Yii::app()->controller->widget('ext.easy-mail.Mail', 
+              array(
+                  'view' => 'testView',
+                  'params' => array(
+                      'to' => array(
+                          'felipe.huerta.iturra@gmail.com' => 'Felipe Huerta'
+                      ),
+                      'cc' => array(
+                          'erickc@selfishness.cl' => 'Erick Carvallo'
+                      ),
+                     'content' => array(
+                         'param1' => $model->userTest->score,
+                     ),
+                     'subject' => 'Alerta test de reacción'
+                 )
+             ));
+
+            ?>
         <div class="row" style="padding:0px;">
             <span class="span1">
                 <div class="semaforo pull-left">
@@ -71,7 +91,10 @@ $this->menu=array(
             </div>
         </span>
         </div>
-        <?php }else{ ?>
+        <?php }else{ 
+
+
+        ?>
         <div class="row" style="padding:0px;">
         <span class="span1">
             <div class="semaforo pull-left">
@@ -88,7 +111,9 @@ $this->menu=array(
             </div>
         </span>
         </div>
-        <?php } ?>
+        <?php
+        }
+        ?>
         <!--
         <script>
         function hoverCallback(index, options, content){

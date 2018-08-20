@@ -30,7 +30,9 @@ return array(
         'application.modules.user.components.*',
         'application.modules.rights.*',
         'application.modules.rights.components.*',
-				'ext.select2.ESelect2',       
+				'ext.select2.ESelect2',
+
+        'application.extensions.yii-mail.YiiMailMessage',       
 	),
 
     'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
@@ -97,6 +99,9 @@ return array(
             'itemTable' => 'authitem',
             'itemChildTable' => 'authitemchild',
             'rightsTable' => 'rights',
+        ),
+        'mail'=>array(
+            'class'=>'ext.yii-mail.YiiMail',
         ),
 		// uncomment the following to enable URLs in path-format
 		/*

@@ -1,5 +1,5 @@
             <div class="row nomargin">
-                <label class=""><h4><?php $labels = $model->attributeLabels();
+                <label style="display: table; margin: 0 auto;text-align: center"><h4><?php $labels = $model->attributeLabels();
                                            echo $labels[$question]; ?></h4></label>
                 <?php $this->widget('bootstrap.widgets.TbButtonGroup', array(
                     'type' => 'normal',

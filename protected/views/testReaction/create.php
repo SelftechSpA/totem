@@ -19,8 +19,8 @@ $this->menu = array(
 <link rel="stylesheet" type="text/css" href="js/slider/slider.css" />
 <script type='application/javascript' src='js/fastclick.js'></script>
 
-<script src="js/TweenMax.min.js"></script>
-<script src="js/reaction_test.js"></script>
+<script src="js/TweenMax.min.js?x=<?php echo rand(100,1); ?>"></script>
+<script src="js/reaction_test.js?x=<?php echo rand(100,1); ?>"></script>
 <div class="row center" style="width: 640px; margin-bottom: 30px; position: relative;">
     <h1>Test de reacción</h1>
     <div class="reaction-tips">
